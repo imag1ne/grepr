@@ -6,8 +6,15 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-clap = "2"
-colored = "2"
+clap = { version = "3", features = ["cargo"] }
 regex = "1"
-glob = "0.3.0"
+walkdir = "2"
+sys-info = "0.9"
+colored = "2"
+rayon = "1"
 thiserror = "1"
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "2"
+rand = "0.8"
